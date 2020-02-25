@@ -1,0 +1,53 @@
+body{
+  padding: 0;
+  margin: 0
+}
+
+img{
+  max-height: 150px;
+  float: left
+}
+
+nav{
+  height: 60px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#drop-container{
+  background-color: lavender;
+  position: relative;
+  width: 13vw;
+  cursor: pointer;
+}
+
+#drop-content{
+  position: absolute;
+  background-image: linear-gradient(red, yellow, green, blue, purple);
+}
+
+#link-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+
+.drop-content{
+  display:none;
+  flex-direction: column;
+  position: absolute;
+  
+}
+
+
+.dropdown:hover .drop-content{
+  display: flex;
+  transition: 2s
+}
